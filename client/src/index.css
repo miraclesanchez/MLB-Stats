@@ -2,6 +2,7 @@
   margin: 0;
 }
 
+/* CSS FOR STANDINGS PAGE */
 .standings-title {
   text-align: center;
   border: solid red 3px;
@@ -28,3 +29,26 @@
 .AL-standings-table th , .NL-standings-table th {
   padding: 10px 15px;
 }
+
+/* CSS FOR NavBar */
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: pink ;
+}
+
+.navbar-form{
+  display: flex;
+  margin-top: 15px;
+  margin-left: 40%;
+  gap: 20px;
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
+  margin-top: 15px;
+}
+
