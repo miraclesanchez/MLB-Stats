@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from "react";
+import { Link } from "react-router-dom";
 
     export default function Standings() {
     const [standings, setStandings] = useState([]);
@@ -38,8 +39,8 @@ import React, {useEffect, useState} from "react";
         
         if(stats.League === "AL" && aLDivision === stats.Division)
         return (
-                 <tr key={stats.Name}>
-                    <td>{stats.City} {stats.Name}</td>
+                 <tr key={stats.Name} className="standings-table-body">
+                    <td><Link to="/Teams-Specific">{stats.City} {stats.Name}</Link></td>
                     <td>{stats.Wins}</td>
                     <td>{stats.Losses}</td>
                 </tr>
@@ -50,10 +51,9 @@ import React, {useEffect, useState} from "react";
         
         if(stats.League === "NL" && nLDivision === stats.Division)
         return (
-                 <tr key={stats.Name}>
-                    <td>
-                        {stats.City} {stats.Name}
-                    </td>
+                 <tr key={stats.Name} className="standings-table-body">
+                    <td><Link to="/Teams-Specific">{stats.City} {stats.Name}</Link></td>
+
                     <td>{stats.Wins}</td>
                     <td>{stats.Losses}</td>
                 </tr>

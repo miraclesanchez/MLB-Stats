@@ -30,11 +30,19 @@
   padding: 10px 15px;
 }
 
+.standings-table-body a {
+  text-decoration: none;
+}
+.standings-table-body a:hover {
+  background-color: grey;
+}
+
 /* CSS FOR NavBar */
 .navbar {
   display: flex;
   flex-direction: row;
   background-color: pink ;
+  padding: 10px 10px;
 }
 
 .navbar-form{
@@ -50,5 +58,16 @@
   flex-direction: row;
   gap: 10em;
   margin-top: 15px;
+ 
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar a:hover {
+  cursor: pointer;
+  color: red;
 }
 
