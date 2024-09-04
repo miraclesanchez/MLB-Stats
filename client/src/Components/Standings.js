@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 
     export default function Standings() {
     const [standings, setStandings] = useState([]);
-    // const [league, setLeague] = useState ("AL");
     const [aLDivision,setALDivision] = useState("East")
     const [nLDivision,setNLDivision] = useState("East")
    
     useEffect(function(){
         const fetchStandings = async ()=>{
-                    console.log("helo")
                     try {
                         const response = await fetch ('http://localhost:3002/api/standings');
                         const data = await response.json();

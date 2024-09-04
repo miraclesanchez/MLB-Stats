@@ -34,7 +34,8 @@
   text-decoration: none;
 }
 .standings-table-body a:hover {
-  background-color: grey;
+  color: black;
+  font-weight: bold;
 }
 
 /* CSS FOR NavBar */
